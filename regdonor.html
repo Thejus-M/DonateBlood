@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>donateBlood Dashboard</title>
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="sidebar-webname">
+            <h2>donateBlood</h2>
+        </div>
+
+        <div class="sidebar-menu">
+            <ul>
+                <li>
+                    <a href="dashboard.html" ><span class="las la-landmark"></span><span>Dashboard</span></a>
+                </li>
+                <li>
+                    <a href="regdonor.html" class="active"><span class="las la-tint"></span><span>Donate Blood</span></a>
+                </li>
+                <li>
+                    <a href="fund.html"><span class="las la-donate"></span><span>Donate fund</span></a>
+                </li>
+                <li>
+                    <a href="profile.html"><span class="las la-user"></span><span>My Profile</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <h2>
+                <label for="">
+                   
+                </label>
+                Donate Blood
+            </h2>
+            <div class="search-bar">
+                <span class="las la-search"></span>
+                <input type="search" placeholder="Search here">
+            </div>
+            <div class="user-bar">
+                <img src="media/userphoto.jpg" width="40px" height="40px" alt="">
+                <div>
+                    <h4>John Doe</h4>
+                    <small>User</small>
+                </div>
+            </div>
+        </header>
+
+    <main>
+        <h2>Register as a Donor</h2>
+        
+        <div class="personal">
+                
+                <p>Personal Details</p>
+
+             <form>
+                <div class="input-container name">
+                    <label for="fname">Full Name</label>
+                    <input id="fname" name="fname" type="text" placeholder="Enter your full name">
+                </div>
+                <div class="input-container gender">
+                    <label for="gender">Enter your gender(M/F/O)</label>
+                    <input id="gender" name="gender" type="text" placeholder="Enter your gender">
+                </div>
+                <div class="input-container dob">
+                    <label for="dob">Date Of Birth</label>
+                    <input id="dob" name="dob" type="date" placeholder="">
+                </div>
+                <div class="input-container bgroup">
+                    <label for="bgroup">Enter your blood group</label>
+                    <input id="bgroup" name="bgroup" type="text" placeholder="Enter your blood group">
+                </div>
+                <div class="input-container aadhar">
+                    <label for="aadhar">Enter your Aadhar Number</label>
+                    <input id="aadhar" name="aadhar" type="number" placeholder="Enter the aadhar no.">
+                </div>
+            </form>
+        </div>
+
+        <div class="contact">
+
+            <p>Contact Details</p>
+
+
+            <form>
+                <div class="input-container mobile">
+                    <label for="mobile">Mobile Number</label>
+                    <input id="mobile" name="mobile" type="number" placeholder="Enter your mobile no.">
+                </div>
+                <div class="input-container email">
+                    <label for="email">Enter your e-mail</label>
+                    <input id="email" name="email" type="email" placeholder="Enter your email">
+                </div>
+            </form>
+        </div>
+
+        <div class="location">
+
+            <p>Location</p>
+
+
+            <form>
+                <div class="input-container state">
+                    <label for="state">State</label>
+                    <input id="state" name="state" type="text" placeholder="Enter the state">
+                </div>
+                <div class="input-container district">
+                    <label for="district">District</label>
+                    <input id="district" name="district" type="text" placeholder="Enter the district">
+                </div>
+                <div class="input-container city">
+                    <label for="city">City (Preferential)</label>
+                    <input id="city" name="city" type="text" placeholder="Enter City">
+                </div>
+                
+            </form>
+        </div>    
+
+        <div class="dsi">
+            <p>Donor Specific Information</p>
+
+
+            <form>
+                <div class="input-container lastdate">
+                    <label for="lastdate">Last date of donation (Not required if it is the first time)</label>
+                    <input id="lastdate" name="lastdate" type="date" placeholder="">
+                </div>
+                <div class="input-container duration">
+                    <label for="duration">Donation duration prefernce</label>
+                    <input id="duration" name="duration" type="number" placeholder="Enter the no. of months">
+                </div>
+            </form>
+            
+            <button class="donate-btn" type="submit"><a href="dashboard.html">Donate</a></button>
+        </div>
+    </main>
+</div>
+</body>
+</html>

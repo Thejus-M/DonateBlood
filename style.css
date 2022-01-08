@@ -1,0 +1,146 @@
+:root{
+    font-size: 100px;
+    font-size: 16px;
+    line-height: 1.5;
+    --primary-blue: #233975;
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+h1{
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: white;
+}
+h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.split-screen{
+    display: flex;
+    flex-direction: column;
+    
+}
+.left{
+    height: 45vh;
+}
+.left, .right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+.left{
+    background-color: #DC1C13;
+}
+.right{
+   
+    height: 72vh;
+}
+.right form{
+    width: 360px;
+    
+}
+.right .copy{
+    color: black;
+    text-align: center;
+    
+
+}
+.right .copy p{
+    margin-top: 10px;
+    font-size: 1.5rem;
+    color: #616161;
+}
+h2{
+    font-size: 2rem;
+   
+}
+span{
+ color: #DC1C13;
+ font-size: 2rem;
+
+}
+form input[type="text"], form input[type="password"]{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    color: black;
+    border: 1px solid #EDF2F7;
+    padding: 1em;
+
+    font-size: 0.875rem;
+
+}
+label{
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.75rem;
+}
+.input-container.password{
+    position: relative;
+}
+.input-container.password i{
+    position: absolute;
+    top: 42px;
+    right: 16px;
+}
+.login-btn{
+    margin-top: 10px;
+    display: block;
+    width: 100%;
+    background: #DC1C13;
+    color: white;
+    font-weight: 700;
+    border: none;
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    letter-spacing: 0.5px;
+}
+.login-btn:hover{
+    background: white;
+    color: #DC1C13;
+    border:2px solid;
+    cursor: pointer;
+    
+}
+.registernew-btn{
+    display: block;
+    width: 100%;
+    background:white;
+    color: black;
+    margin-top: 40px;
+    font-weight: 400;
+    border: 2px solid;
+    
+    
+    padding: 1rem;
+    font-size: 1.5rem;
+    letter-spacing: 0.5px;
+}
+.registernew-btn a{
+    color: black;
+}
+.login-btn a{
+    color: black;
+
+}
+
+
+@media screen and (min-width: 900px) {
+    .split-screen{
+        flex-direction: row;
+        height: 100vh;
+    }
+    .left,
+    .right{
+        display: flex;
+        width: 50%;
+        height: auto;
+    }
+    
+}
